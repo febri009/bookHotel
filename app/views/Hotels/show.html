@@ -1,32 +1,32 @@
 #{extends 'main.html' /}
 #{set title:hotel.name /}
 
-<h1>View hotel</h1>
+<h1>Lihat Hotel</h1>
 
 #{form @book(hotel.id)}
-<p>
-    <strong>Name:</strong> ${hotel.name}
-</p>
-<p>
-    <strong>Address:</strong> ${hotel.address}
-</p>
-<p>
-    <strong>City:</strong> ${hotel.city}
-</p>
-<p>
-    <strong>State:</strong> ${hotel.state}
-</p>
-<p>
-    <strong>Zip:</strong> ${hotel.zip}
-</p>
-<p>
-    <strong>Country:</strong> ${hotel.country}
-</p>
-<p>
-    <strong>Nightly rate:</strong> ${hotel.price}
-</p>
-
-<p class="buttons">
-    <input type="submit" value="Book Hotel"> <a href="@{index()}">Back to search</a>
-</p>
+    <p>
+        <strong>Nama:</strong> ${hotel.name}
+    </p>
+    <p>
+        <strong>Alamat:</strong> ${hotel.address}
+    </p>
+    <p>
+        <strong>Kabupaten:</strong> ${hotel.city}
+    </p>
+    <p>
+        <strong>Kecamatan:</strong> ${hotel.state}
+    </p>
+    <p>
+        <strong>Pos Kode:</strong> ${hotel.zip}
+    </p>
+    <p>
+        <strong>Negara:</strong> ${hotel.country}
+    </p>
+    <p>
+        <strong>Harga Permalam:</strong> ${hotel.price}
+    </p>
+    
+    <p class="buttons">
+        <input type="submit" value="Book Hotel"> <a href="@{index()}">Kembali</a>
+    </p>
 #{/form}
